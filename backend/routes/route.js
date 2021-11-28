@@ -6,7 +6,7 @@ import {getUsuarios} from '../controllers/usuario-controller.js';
 const route= express.Router();
  
 //find
-route.get('/usuarios',getUsuarios);
+//route.get('/usuarios',getUsuarios);
 
 //add
 //route.post('/usuarios',addUsuarios)
