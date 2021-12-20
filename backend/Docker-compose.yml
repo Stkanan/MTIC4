@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  backend:
+    container_name: backend
+    build: 
+      context: .
+    volumes: 
+      - .:/backend
+    ports:
+      - 3000:3000
+    expose:
+      - 3000
+    image: app:react
+    command: npm start

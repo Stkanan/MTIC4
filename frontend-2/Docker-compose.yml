@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  frontend:
+    container_name: 3loniux
+    build: 
+      context: .
+    volumes: 
+      - .:/frontend-2
+    ports:
+      - 3000:3000
+    expose:
+      - 3000
+    image: app:react
+    command: npm start
